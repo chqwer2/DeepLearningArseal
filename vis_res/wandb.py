@@ -1,15 +1,10 @@
 
-
-
-
-
 import wandb
 wandb.login(key="ee52f649687b804de41f2c26b2049c7cd3e4db99")
 
 
 
-
-model_name += "_bs_{}_wd_{}".format(args.batch_size, args.weight_decay)
+model_name = "_bs_{}_wd_{}".format(args.batch_size, args.weight_decay)
 
 run = wandb.init(
     # Set the project where this run will be logged
