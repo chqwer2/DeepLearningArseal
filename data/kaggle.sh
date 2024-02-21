@@ -9,7 +9,7 @@ kaggle datasets init -p .
 vim dataset-metadata.json
 
 # 3.
-kaggle datasets create -p .
+kaggle datasets create -p .   -r (skip zip tar)
 
 # Update
 kaggle datasets version -p . -m "Your message here"
