@@ -4,13 +4,16 @@ import numpy as np
 import PIL.Image as I
 
 
-img = convert_from_path(r'C:\Users\calvchen\Downloads\daniel-moonasar-lesson-planning.pdf')
+# pip install  pdf2image
+
+
+img = convert_from_path(r'C:\Users\calvchen\Desktop\CSC\Letter of Recommendation.pdf')
 
 print(img)
-# plt.imshow(img[0])
-# plt.show()
-for i,j in enumerate(img[7:9]):
-    j.save(r'C:\Users\calvchen\Desktop\daniel-moonasar-lesson-planning{}.jpg'.format(i))
+
+for i,j in enumerate(img[:]):
+    j.save(r'C:\Users\calvchen\Desktop\CSC\Other Recommendation\Letter{}.jpg'.format(i))
+
 
 
 
